@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap'); /* Rubik Doodle Shadow */
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Doodle+Shadow&display=swap'); /* Luckiest Guy */
+
+@font-face {
+    font-family: University;
+    src: local(University),url(../fonts/University.otf);
+}
+
+:root {
+    --fontpadrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonttitulo: University;
+    --fontespecial: Rubik Doodle Shadow;
+
+    --cor0: #D4FFD5;
+    --cor1: #ABDEAD;
+    --cor2: #A1FFA4;
+    --cor3: #2D7930;
+    --cor4: #274528;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+    height: 97.9vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--fontpadrao);
+}
+
+header {
+    background-color: var(--cor3);
+    color: white;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
+
+    margin-top: 20px;
+}
+
+header h1 {
+    font-family: var(--fonttitulo);
+    font-size: 5em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    position: relative;
+    
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4) 99%);
+
+    padding: 0px 30px;
+    margin: 0px 8px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav a:hover {
+    padding-top: 30px;
+    top: 30px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+}
+
+section#boasvindas {
+    position: relative;
+    display: flex;
+
+    background-color: var(--cor3);
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
+}
+
+section#boasvindas > img {
+    height: 500px;
+}
+
+section#boasvindas > div {
+    position: relative;
+    width: 2000px;
+}
+
+section#boasvindas > div > div {
+    position: absolute;
+    top: 50%;
+
+    font-size: 1.6em;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+
+    transform: translate(0%, -50%);
+}
+
+section#boasvindas > div > div > h2 {
+    font-size: 2em;
+    text-align: center;
+}
