@@ -1,0 +1,11 @@
+{
+  "name": "projeto-te-salvando.com",
+  "version": "1.0.0",
+  "description": "2º Projeto de HTML, CSS e JavaScript com o intuito de desenvolver e exercitar minhas habilidades.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Victor Carvalho de Souza",
+  "license": "ISC"
+}
