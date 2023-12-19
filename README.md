@@ -17,4 +17,4 @@ Com esse site você poderá:
 - [ ] Chat
 - [ ] Jornal
 ---
-*Projeto inicido dia 19/12/2023*
+*Projeto iniciado dia 19/12/2023*
