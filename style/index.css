@@ -25,7 +25,7 @@ body {
     padding: 0px;
     margin: 0px;
     
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
     height: 97.9vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,18 +34,20 @@ body {
     font-family: var(--fontpadrao);
 }
 
+main {
+    padding-bottom: 20px;
+}
+
 header {
     background-color: var(--cor3);
     color: white;
     box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
-
-    margin-top: 20px;
 }
 
 header h1 {
     font-family: var(--fonttitulo);
     font-size: 5em;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.507);
 
     padding-bottom: 20px;
     text-align: center;
@@ -63,6 +65,7 @@ nav a {
     padding: 0px 30px;
     margin: 0px 8px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.384);
 }
 
 nav a:hover {
@@ -81,6 +84,7 @@ section#boasvindas {
 
 section#boasvindas > img {
     height: 500px;
+    margin-left: 150px;
 }
 
 section#boasvindas > div {
@@ -92,14 +96,52 @@ section#boasvindas > div > div {
     position: absolute;
     top: 50%;
 
-    font-size: 1.6em;
+    font-size: 2em;
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.432);
 
     transform: translate(0%, -50%);
 }
 
 section#boasvindas > div > div > h2 {
-    font-size: 2em;
+    font-size: 3em;
+    font-family: var(--fontespecial);
     text-align: center;
+}
+
+section#mais {
+    background-color: white;
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+}
+
+section#mais section#sumario h2 {
+    font-size: 4em;
+    font-family: var(--fonttitulo);
+    text-align: center;
+    text-decoration: underline;
+
+    color: var(--cor4);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.199);
+}
+
+section#mais section#sumario p, ul {
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+
+section#mais section#sumario ul {
+    columns: 2;
+}
+
+section#mais section#sumario ul a {
+    text-decoration: underline;
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+section#mais section#sumario ul a:hover {
+    font-size: 1.1em;
+    transition-duration: 0.5s;
 }
