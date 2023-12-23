@@ -46,7 +46,7 @@ header {
 
 header h1 {
     font-family: var(--fonttitulo);
-    font-size: 5em;
+    font-size: 4em;
     text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.507);
 
     padding-bottom: 20px;
@@ -96,7 +96,7 @@ section#boasvindas > div > div {
     position: absolute;
     top: 50%;
 
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.432);
 
@@ -117,7 +117,7 @@ section#mais {
 }
 
 section#mais section#sumario h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-family: var(--fonttitulo);
     text-align: center;
     text-decoration: underline;
