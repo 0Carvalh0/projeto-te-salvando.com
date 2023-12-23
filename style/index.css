@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap'); /* Rubik Doodle Shadow */
-
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Doodle+Shadow&display=swap'); /* Luckiest Guy */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:wght@300&display=swap'); /* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 @font-face {
     font-family: University;
@@ -12,7 +11,8 @@
 :root {
     --fontpadrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonttitulo: University;
-    --fontespecial: Rubik Doodle Shadow;
+    --fonte01: 'Lato', sans-serif;
+    --fonte02: 'Roboto', sans-serif;
 
     --cor0: #D4FFD5;
     --cor1: #ABDEAD;
@@ -21,15 +21,13 @@
     --cor4: #274528;
 }
 
-body {
-    padding: 0px;
+* {
     margin: 0px;
-    
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
-    height: 97.9vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 0px;
+}
+
+body, html {
+    background-color: white;
 
     font-family: var(--fontpadrao);
 }
@@ -39,18 +37,31 @@ main {
 }
 
 header {
+    position: relative;
     background-color: var(--cor3);
+    background-image: url('../images/fundo001.png');
     color: white;
     box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
 }
 
-header h1 {
-    font-family: var(--fonttitulo);
-    font-size: 5em;
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.507);
+header div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: -30px;
+    justify-content: flex-end;
+}
 
-    padding-bottom: 20px;
-    text-align: center;
+header h1 {
+    position: relative;
+    font-family: var(--fontpadrao);
+    font-size: 1.5em;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.507);
+    margin-right: 5px;
+}
+
+header img {
+    width: 135px;
 }
 
 nav a {
@@ -74,74 +85,88 @@ nav a:hover {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
 }
 
-section#boasvindas {
-    position: relative;
-    display: flex;
-
-    background-color: var(--cor3);
-    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
-}
-
-section#boasvindas > img {
-    height: 500px;
-    margin-left: 150px;
-}
-
-section#boasvindas > div {
-    position: relative;
-    width: 2000px;
-}
-
-section#boasvindas > div > div {
-    position: absolute;
-    top: 50%;
-
-    font-size: 2em;
-    color: white;
-    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.432);
-
-    transform: translate(0%, -50%);
-}
-
-section#boasvindas > div > div > h2 {
-    font-size: 3em;
-    font-family: var(--fontespecial);
-    text-align: center;
-}
-
 section#mais {
-    background-color: white;
-    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     padding: 10px;
 }
 
-section#mais section#sumario h2 {
-    font-size: 4em;
+section#mais h2 {
+    font-size: 3em;
     font-family: var(--fonttitulo);
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 20px;
 
     color: var(--cor4);
     text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.199);
 }
 
-section#mais section#sumario p, ul {
+section#mais section#content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+section#mais section#content p, dl {
     font-size: 1.5em;
-    margin-left: 50px;
 }
 
-section#mais section#sumario ul {
-    columns: 2;
+section#mais section#content dd {
+    margin-left: 45px;
+    font-size: 0.95em;
 }
 
-section#mais section#sumario ul a {
-    text-decoration: underline;
+section#mais section#content div#sobre {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black
+}
+
+section#mais section#content div h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonttitulo);
     color: var(--cor4);
-    font-weight: bolder;
 }
 
-section#mais section#sumario ul a:hover {
+section#mais section#content section#nois img {
+    justify-content: center;
+
+    width: 25vw;
+    border-radius: 10%;
+}
+
+section#mais section#content section#nois h3 {
+    font-family: var(--fonttitulo);
+    color: var(--cor4);
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 1.7em;
+}
+
+section#mais section#content section#nois div#fundador {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--cor3);
+    padding: 3px 0px;
+}
+
+footer p {
     font-size: 1.1em;
-    transition-duration: 0.5s;
+    text-align: center;
+    color: white;
+}
+
+footer p a {
+    color: white;
+    font-weight: bold;
 }
