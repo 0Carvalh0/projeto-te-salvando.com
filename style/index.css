@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap'); /* Rubik Doodle Shadow */
-
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Doodle+Shadow&display=swap'); /* Luckiest Guy */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:wght@300&display=swap'); /* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 @font-face {
     font-family: University;
@@ -12,7 +11,8 @@
 :root {
     --fontpadrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonttitulo: University;
-    --fontespecial: Rubik Doodle Shadow;
+    --fonte01: 'Lato', sans-serif;
+    --fonte02: 'Roboto', sans-serif;
 
     --cor0: #D4FFD5;
     --cor1: #ABDEAD;
@@ -25,11 +25,7 @@ body {
     padding: 0px;
     margin: 0px;
     
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
-    height: 97.9vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: white;
 
     font-family: var(--fontpadrao);
 }
@@ -41,24 +37,34 @@ main {
 header {
     position: relative;
     background-color: var(--cor3);
+    background-image: url('../images/fundo001.png');
     color: white;
     box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
 }
 
 header h1 {
-    font-family: var(--fonttitulo);
-    font-size: 4em;
+    position: absolute;
+    font-family: var(--fontpadrao);
+    font-size: 1.5em;
     text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.507);
+    width: 500px;
 
-    padding-bottom: 20px;
-    text-align: center;
+    left: 77%;
+    top: 26%;
+
+    margin-bottom: 0px;
+    padding-bottom: 50px;
 }
 
 header img {
-    width: 180px;
+    width: 135px;
     position: absolute;
     top: 8%;
     right: 5%;
+}
+
+nav {
+    padding-bottom: 130px;
 }
 
 nav a {
@@ -82,49 +88,13 @@ nav a:hover {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
 }
 
-section#boasvindas {
-    position: relative;
-    display: flex;
-
-    background-color: var(--cor3);
-    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
-}
-
-section#boasvindas > img {
-    height: 500px;
-    margin-left: 150px;
-}
-
-section#boasvindas > div {
-    position: relative;
-    width: 2000px;
-}
-
-section#boasvindas > div > div {
-    position: absolute;
-    top: 50%;
-
-    font-size: 1.5em;
-    color: white;
-    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.432);
-
-    transform: translate(0%, -50%);
-}
-
-section#boasvindas > div > div > h2 {
-    font-size: 3em;
-    font-family: var(--fontespecial);
-    text-align: center;
-}
-
 section#mais {
-    background-color: white;
     max-width: 1500px;
     margin: auto;
     padding: 10px;
 }
 
-section#mais section#sumario h2 {
+section#mais h2 {
     font-size: 3em;
     font-family: var(--fonttitulo);
     text-align: center;
@@ -134,30 +104,51 @@ section#mais section#sumario h2 {
     text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.199);
 }
 
-section#mais section#sumario p, ul {
-    font-size: 1.5em;
-    margin-left: 50px;
-}
-
-section#mais section#sumario ul {
+section#mais section#content {
+    position: relative;
+    display: flex;
     columns: 2;
+    }
+
+section#mais section#content p, dl {
+    font-size: 1.5em;
 }
 
-section#mais section#sumario ul a {
-    text-decoration: underline;
+section#mais section#content div#sobre {
+    width: 550px;
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+}
+
+section#mais section#content div h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonttitulo);
     color: var(--cor4);
-    font-weight: bolder;
 }
 
-section#mais section#sumario ul a:hover {
-    font-size: 1.1em;
-    transition-duration: 0.5s;
+section#mais section#content section#nois {
+    margin: auto;
+    width: 550px;
+    height: 100%;
+}
+
+section#mais section#content section#nois img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+section#mais section#content section#nois h3 {
+    font-family: var(--fonttitulo);
+    color: var(--cor4);
+    font-size: 1.7em;
+    text-align: center;
 }
 
 footer {
     background-color: var(--cor3);
     padding: 1px 0px;
-    margin-top: 10px;
 }
 
 footer p {
