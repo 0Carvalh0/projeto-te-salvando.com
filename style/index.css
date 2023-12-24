@@ -111,6 +111,13 @@ section#mais section#content {
     width: 50vw;
 }
 
+@media screen and (max-width: 768px){
+    section#mais section#content {
+        width: 80vw;
+        flex-direction: column;
+    }
+}
+
 section#mais section#content p, dl {
     font-size: 1.5em;
 }
@@ -121,6 +128,8 @@ section#mais section#content dd {
 }
 
 section#mais section#content div#sobre {
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     padding: 10px;
     margin: auto;
@@ -135,6 +144,11 @@ section#mais section#content div h3 {
     font-size: 2em;
     font-family: var(--fonttitulo);
     color: var(--cor4);
+}
+
+section#mais section#content section#nois {
+    display: flex;
+    flex-direction: column;
 }
 
 section#mais section#content section#nois img {
