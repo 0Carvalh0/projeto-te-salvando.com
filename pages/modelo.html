@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>te salvando.com</title>
-    <link rel="stylesheet" href="../style/modelo.css">
-    <link rel="shortcut icon" href="../images/logo001.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/index.css" media="all">
+    <link rel="stylesheet" href="../style/mqindex.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="../icons/logo001.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <nav>
+            <i id="botaomenu" onclick="abrirmenu()" class="material-symbols-outlined" size-50>menu</i>
+            <menu id="menu">
+                <ul>
+                    <li><a href="pages/conteudo.html" target="_self" rel="next">Conteúdos</a></li>
+                    <li><a href="pages/dicas.html" target="_self" rel="next">Orientação vocacional</a></li>
+                    <li><a href="pages/datas.html" target="_self" rel="next">Calendário</a></li>
+                    <li><a href="pages/redacao.html" target="_self" rel="next">Redação</a></li>
+                    <li><a href="pages/chat.html" target="_self" rel="next">Plantão</a></li>
+                    <li><a href="pages/jornal.html" target="_self" rel="next">JV</a></li>
+                    <li><a href="pages/simulado.html" target="_self" rel="next">Simulados</a></li>
+                    <li><a href="pages/anteriores.html" target="_self" rel="next">Edições anteriores</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <div id="logo">
+            <h1>TE SALVANDO.COM</h1>
+            <img src="../images/logo001.png" alt="logo-site">
+        </div>
+    </header>
+
     <main id="container">
-        <header id="cabecalho">
-            <nav>
-                <a href="conteudo.html" target="_self" rel="next">Conteúdos</a>
-                <a href="dicas.html" target="_self" rel="next">Orientação vocacional</a>
-                <a href="datas.html" target="_self" rel="next">Calendário</a>
-                <a href="redacao.html" target="_self" rel="next">Redação</a>
-                <a href="chat.html" target="_self" rel="next">Plantão</a>
-                <a href="jornal.html" target="_self" rel="next">JV</a>
-                <a href="simulado.html" target="_self" rel="next">Simulados</a>
-                <a href="anteriores.html" target="_self" rel="next">Edições anteriores</a>
-            </nav>
-            <div id="logo">
-                <h1>TE SALVANDO.COM</h1>
-                <img src="../images/logo001.png" alt="logo te salvando" srcset="">
-            </div>
-        </header>
-        <footer>
-            <p>Página para estudos, criada por <a href="https://github.com/0Carvalh0" target="_blank" rel="external">João Victor Carvalho</a> com ajuda de <a href="#" target="_blank" rel="external">Murilo Marques</a>.</p>
-        </footer>
+
     </main>
+
+    <footer>
+        <p>Página para estudos, criada por <a href="https://github.com/0Carvalh0" target="_blank" rel="external">João Victor Carvalho</a> com ajuda de <a href="#" target="_blank" rel="external">Murilo Marques</a>.</p>
+    </footer>
+
+    <script src="../scripts/index.js"></script>
 </body>
+</html>

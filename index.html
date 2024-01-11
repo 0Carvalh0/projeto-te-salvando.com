@@ -4,63 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>te salvando.com</title>
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="shortcut icon" href="images/logo001.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style/index.css" media="all">
+    <link rel="stylesheet" href="style/mqindex.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="icons/logo001.ico" type="image/x-icon">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <i id="botaomenu" onclick="abrirmenu()" class="material-symbols-outlined" size-50>menu</i>
+            <menu id="menu">
+                <ul>
+                    <li><a href="pages/conteudo.html" target="_self" rel="next">Conteúdos</a></li>
+                    <li><a href="pages/dicas.html" target="_self" rel="next">Orientação vocacional</a></li>
+                    <li><a href="pages/datas.html" target="_self" rel="next">Calendário</a></li>
+                    <li><a href="pages/redacao.html" target="_self" rel="next">Redação</a></li>
+                    <li><a href="pages/chat.html" target="_self" rel="next">Plantão</a></li>
+                    <li><a href="pages/jornal.html" target="_self" rel="next">JV</a></li>
+                    <li><a href="pages/simulado.html" target="_self" rel="next">Simulados</a></li>
+                    <li><a href="pages/anteriores.html" target="_self" rel="next">Edições anteriores</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <div id="logo">
+            <h1>TE SALVANDO.COM</h1>
+            <img src="images/logo001.png" alt="logo-site">
+        </div>
+    </header>
+
     <main id="container">
-        <header id="cabecalho">
-            <nav>
-                <a href="pages/conteudo.html" target="_self" rel="next">Conteúdos</a>
-                <a href="pages/dicas.html" target="_self" rel="next">Orientação vocacional</a>
-                <a href="pages/datas.html" target="_self" rel="next">Calendário</a>
-                <a href="pages/redacao.html" target="_self" rel="next">Redação</a>
-                <a href="pages/chat.html" target="_self" rel="next">Plantão</a>
-                <a href="pages/jornal.html" target="_self" rel="next">JV</a>
-                <a href="pages/simulado.html" target="_self" rel="next">Simulados</a>
-                <a href="pages/anteriores.html" target="_self" rel="next">Edições anteriores</a>
-            </nav>
-            <div id="logo">
-                <h1>TE SALVANDO.COM</h1>
-                <img src="images/logo001.png" alt="logo te salvando" srcset="">
-            </div>
-        </header>
-        <section id="mais">
-            <h2>Institucional</h2>
-            <section id="content">
-                <div id="sobre">
-                    <h3>Sobre</h3>
-                    <div><p><em>Te salvando.com</em> foi criada por dois estudantes com a intenção de ajudar outros estudantes que estão passando pela fase do vestibular ENEM (Exame Nacional do Ensino Médio) de forma gratuita.</p><p>Aqui você poderá encontrar todo material e auxilio que precisa para um desempenho satisfatório no exame.</p><p>Abaixo está o que o <em>te salvando</em> pode oferecer:</p></div>
-                    <dl>
-                        <li>Conteúdos de todas as áreas de conhecimento</li>
-                        <dd>Linguagens e suas tecnologias</dd>
-                        <dd>Ciências humanas e suas tecnologias</dd>
-                        <dd>Ciências da Natureza e suas Tecnologias</dd>
-                        <dd>Matemática</dd>
-                        <li>Orientação vocacional</li>
-                        <li>Calendário vestibular</li>
-                        <li>Plataforma para criação de redação</li>
-                        <li>Plantão de duvidas com professores</li>
-                        <li>Jornal vestibular</li>
-                        <li>Simulados</li>
-                        <li>Edições anteriores</li>
-                    </dl>
-                </div>
-                <section id="nois">
-                    <img src="images/img001.jpg" alt="lapis">
-                    <h3>Fundadores</h3>
-                    <div id="fundador">
-                        <p><strong>Desenvolvedor Web:</strong> João Victor Carvalho<br>(Estudante de desenvolvimento web - UNISA)</p>
-                    </div>
-                    <div id="fundador">
-                        <p><strong>Direção de criação:</strong> Murilo Marques<br>(Formado em Gestão de Pessoas - Universidade Nove de Julho)</p>
-                    </div>
-                </section>
-            </section>
+        <h2>INSTITUCIONAL</h2>
+        <section id="sobre">
+            <h3>SOBRE</h3>
+            <p><em>Te salvando.com</em> foi criada por dois estudantes com a intenção de ajudar outros estudantes que estão passando pela fase do vestibular ENEM (Exame Nacional do Ensino Médio) de forma gratuita.</p><p>Aqui você poderá encontrar todo material e auxilio que precisa para um desempenho satisfatório no exame.</p><p>Abaixo está o que o <em>te salvando</em> pode oferecer:</p>
+            <dl>
+                <li>Conteúdos de todas as áreas de conhecimento</li>
+                <dd>Linguagens e suas tecnologias</dd>
+                <dd>Ciências humanas e suas tecnologias</dd>
+                <dd>Ciências da Natureza e suas Tecnologias</dd>
+                <dd>Matemática</dd>
+                <li>Orientação vocacional</li>
+                <li>Calendário vestibular</li>
+                <li>Plataforma para criação de redação</li>
+                <li>Plantão de duvidas com professores</li>
+                <li>Jornal vestibular</li>
+                <li>Simulados</li>
+                <li>Edições anteriores</li>
+            </dl>
         </section>
-        <footer>
-            <p>Página para estudos, criada por <a href="https://github.com/0Carvalh0" target="_blank" rel="external">João Victor Carvalho</a> com ajuda de <a href="#" target="_blank" rel="external">Murilo Marques</a>.</p>
-        </footer>
+        
+        <section id="fundadores">
+            <img src="images/img001.jpg" alt="img-estudos">
+            <p><strong>Desenvolvedor Web:</strong> João Victor Carvalho<br>(Estudante de Analise e Desenvolvimento de Sistemas - UNIP)</p>
+            <p><strong>Direção de criação:</strong> Murilo Marques<br>(Formado em Gestão de Pessoas - Universidade Nove de Julho)</p>
+        </section>
     </main>
+
+    <footer>
+        <p>Página para estudos, criada por <a href="https://github.com/0Carvalh0" target="_blank" rel="external">João Victor Carvalho</a> com ajuda de <a href="#" target="_blank" rel="external">Murilo Marques</a>.</p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
