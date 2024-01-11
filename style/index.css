@@ -86,15 +86,74 @@ header > div#logo {
     padding: 10px;
 
     left: 100vw;
-    transform: translate(-430px, 0%);
+    transform: translate(-425px, 0%);
 }
 
 header > div#logo > h1 {
     color: white;
-    margin-right: 10px;
     text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 header > div#logo > img {
     width: 100px;
+}
+
+main {
+    padding: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+main > h2, section > h3 {
+    font-family: var(--fonttitulo);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+main > h2 {
+    text-align: center;
+}
+
+main > section#sobre > h3 {
+    text-align: center;
+}
+
+main > section#sobre > dl {
+    margin-bottom: 10px;
+}
+
+main > section#sobre > dl > dd {
+    text-indent: 80px;
+}
+
+main > section#fundadores {
+    text-align: center;
+}
+
+main > section#fundadores > img {
+    max-width: 80vw;
+    border-radius: 40px;
+}
+
+main > section#fundadores > p {
+    margin: 20px 0px;
+}
+
+footer {
+    background-color: #274528;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
