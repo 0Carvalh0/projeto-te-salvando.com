@@ -2,12 +2,33 @@
 
 /* MEDIA QUERIES INDEX */
 
-@media screen and (min-width: 789) {
+@media screen and (min-width: 1310px) {
+    header nav {
+        width: 80%;
+    }
+
     header > nav > i#botaomenu {
         display: none;
     }
 
+    div#logo {
+        width: 20%;
+    }
+
     header > nav > menu {
-        display: block;
+        display: flex;
+        top: 0px;
+        background-color: transparent;
+    }
+
+    header > nav > menu > ul {
+        display: flex;
+    }
+
+    header > nav > menu > ul > li {
+        background-color: var(--cor4);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0px 5px;
     }
 }

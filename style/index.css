@@ -53,13 +53,20 @@ header > nav > i#botaomenu {
     margin-left: 20px;
     font-size: 50px;
     font-variation-settings: 'OPSZ' 50;
-    box-shadow: 2px 2px 0px black;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+}
+
+header > nav > i#botaomenu::selection {
+    background-color: transparent;
 }
 
 header > nav > i#botaomenu:hover {
     background-color: #2D7930;
-    border: 1px solid black;
     cursor: pointer;
+}
+
+header > nav > i#botaomenu:active {
+    border: 1px solid black;
 }
 
 header > nav > menu {
@@ -86,6 +93,10 @@ header > nav > menu > ul > li:hover {
 header > nav > menu > ul > li > a {
     color: white;
     text-decoration: none;
+}
+
+header > nav > menu > ul > li > a::selection {
+    background-color: transparent;
 }
 
 header > nav > menu > ul > li:hover a {
