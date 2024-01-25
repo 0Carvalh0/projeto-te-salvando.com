@@ -7,7 +7,7 @@ function abrirmenu() {
 }
 
 function mudartamanho() {
-    if (window.innerWidth >= 1310) {
+    if (window.innerWidth >= 1400) {
         menu.style.display = 'block'
     } else {
         menu.style.display = 'none'
