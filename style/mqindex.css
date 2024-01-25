@@ -14,7 +14,7 @@
     header > nav > menu {
         display: flex;
         position: relative;
-        top: 0px;
+        top: -33px;
         background-color: transparent;
         width: 100%;
     }
@@ -26,9 +26,12 @@
     }
 
     header > nav > menu > ul > li {
-        background-color: var(--cor4);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--cor4);
+        border-radius: 0px 0px 14px 14px;
         margin: 0px 5px;
         width: 100%;
     }
