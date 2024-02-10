@@ -80,7 +80,6 @@ header > nav > menu > ul > li {
   font-weight: 700;
   text-align: center;
 
-  height: 40px;
 
   display: flex;
   justify-content: flex-end;
@@ -89,9 +88,8 @@ header > nav > menu > ul > li {
 
 header > nav > menu > ul > li:hover {
   background-color: #abdead;
-  transform: translate(0, 10px);
   cursor: pointer;
-
+  
   transition-duration: 0.3s;
 }
 
