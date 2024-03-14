@@ -39,7 +39,7 @@ header {
     background: #2D7930 url('../images/fundo001.png');
 }
 
-header > nav > i#botaomenu {
+header nav i#botaomenu {
     color: white;
     background-color: #274528;
     border-radius: 50%;
@@ -50,20 +50,20 @@ header > nav > i#botaomenu {
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
-header > nav > i#botaomenu::selection {
+header nav i#botaomenu::selection {
     background-color: transparent;
 }
 
-header > nav > i#botaomenu:hover {
+header nav i#botaomenu:hover {
     background-color: #2D7930;
     cursor: pointer;
 }
 
-header > nav > i#botaomenu:active {
+header nav i#botaomenu:active {
     border: 2px solid #fff;
 }
 
-header > nav > menu {
+header nav menu {
     display: none;
     position: absolute;
     top: 119px;
@@ -71,7 +71,7 @@ header > nav > menu {
     background-color: #274528;
 }
 
-header > nav > menu > ul > li {
+header nav menu ul li {
     list-style-type: none;
     text-transform: uppercase;
     border-bottom: 2px solid black;
@@ -80,21 +80,21 @@ header > nav > menu > ul > li {
     text-align: center;
 }
 
-header > nav > menu > ul > li:hover {
+header nav menu ul li:hover {
     background-color: #ABDEAD;
     cursor: pointer;
 }
 
-header > nav > menu > ul > li > a {
+header nav menu ul li a {
     color: white;
     text-decoration: none;
 }
 
-header > nav > menu > ul > li > a::selection {
+header nav menu ul li a::selection {
     background-color: transparent;
 }
 
-header > nav > menu > ul > li:hover a {
+header nav menu ul li:hover a {
     color: var(--cor4);
 }
 
@@ -107,7 +107,7 @@ header div#logo {
     padding: 10px;
 }
 
-header > div#logo > h1 {
+header div#logo h1 {
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 30px;
@@ -115,7 +115,7 @@ header > div#logo > h1 {
     text-align: right;
 }
 
-header > div#logo > img {
+header div#logo img {
     width: 100px;
 }
 

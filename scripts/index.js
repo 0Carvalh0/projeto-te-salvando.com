@@ -1,15 +1,15 @@
 function abrirmenu() {
-    if (menu.style.display == 'none') {
-        menu.style.display = 'block'
-    } else {
-        menu.style.display = 'none'
-    }
+  if (ul.style.display == "none") {
+    ul.style.display = "block";
+  } else {
+    ul.style.display = "none";
+  }
 }
 
 function mudartamanho() {
-    if (window.innerWidth >= 1400) {
-        menu.style.display = 'block'
-    } else {
-        menu.style.display = 'none'
-    }
+  if (window.innerWidth >= 1400) {
+    ul.style.display = "block";
+  } else {
+    ul.style.display = "none";
+  }
 }
