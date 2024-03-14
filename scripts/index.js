@@ -1,15 +1,17 @@
+const btnMenu = document.getElementById("botaomenu");
+const list = document.getElementById("menu");
+
 function abrirmenu() {
-  if (ul.style.display == "none") {
-    ul.style.display = "block";
+  if (list.style.left == "-500px") {
+    list.style.left = "0px";
+    btnMenu.classList.replace("fa-bars", "fa-xmark");
   } else {
-    ul.style.display = "none";
+    list.style.left = "-500px";
+    btnMenu.classList.replace("fa-xmark", "fa-bars");
   }
 }
 
 function mudartamanho() {
-  if (window.innerWidth >= 1400) {
-    ul.style.display = "block";
-  } else {
-    ul.style.display = "none";
-  }
+  list.style.left = "-500px";
+  btnMenu.classList.replace("fa-xmark", "fa-bars");
 }

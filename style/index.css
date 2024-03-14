@@ -40,19 +40,26 @@ header {
   right: 0;
   top: 0;
 
-  background: #2d7930 url("../images/fundo001.png");
+  background: var(--cor3) url("../images/fundo001.png");
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav i#botaomenu {
-  color: white;
-  background-color: #274528;
+  position: relative;
+  left: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 50%;
-  padding: 5px;
-  margin-left: 20px;
-  font-size: 50px;
-  font-variation-settings: "OPSZ" 50;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+  color: #fff;
+  font-size: 40px;
+  background-color: #274528;
+  box-shadow: 2px 2px 0px #000;
 }
 
 header nav i#botaomenu::selection {
@@ -60,16 +67,19 @@ header nav i#botaomenu::selection {
 }
 
 header nav i#botaomenu:hover {
-  background-color: #2d7930;
+  background-color: var(--cor3);
   cursor: pointer;
 }
 
 header nav ul {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 119px;
+  top: 120px;
+  left: -500px;
 
-  background-color: #274528;
+  background-color: var(--cor4);
+  transition: ease .3s;
 }
 
 header nav ul li {
@@ -82,8 +92,8 @@ header nav ul li {
   padding: 20px 10px 10px 10px;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul li:hover {
