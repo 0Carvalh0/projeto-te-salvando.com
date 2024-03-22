@@ -10,10 +10,3 @@ function abrirmenu() {
     btnMenu.classList.replace("fa-xmark", "fa-bars");
   }
 }
-
-function mudartamanho() {
-  if (window.innerWidth < "1400px") {
-    list.style.left = "-500px";
-    btnMenu.classList.replace("fa-xmark", "fa-bars");
-  }
-}
