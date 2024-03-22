@@ -5,17 +5,20 @@
 @media screen and (min-width: 1400px) {
   header nav {
     width: 100%;
+    align-self: flex-start;
   }
 
   header nav i#botaomenu {
     display: none;
   }
 
-  header nav ul {
+  header nav ul#menu {
     position: relative;
-    top: -35px;
+    top: 0px;
+    left: 0px;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
     width: 100%;
@@ -26,8 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 50px;
 
     background: var(--cor4);
     border-radius: 0px 0px 14px 14px;
